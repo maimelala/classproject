@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 燈箱效果的css -->
+    <link rel="stylesheet" href="./lightbox2/css/lightbox.css">
+    <!-- 自己得css -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            margin: 0
+        }
+.banner img {
+    width: 100%;
+}
+        .text {
+
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .textbox {
+
+            width: 360px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        p {
+            text-align: left;
+            color: rgb(106, 106, 109);
+            font-size: 20px;
+
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #ea1010;
+        }
+
+        .slogan {
+            background-color: #ea1010;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .slogan h2 {
+            color: #fefcfc;
+        }
+
+        .recommand h2 {
+            font-size: 40px;
+            color: rgb(42, 177, 21);
+            text-align: center;
+        }
+
+        /* 課程介紹最外層 */
+        .classcontent {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        /* 課程介紹內部群組 */
+        .classbox {
+            width: 320px;
+            /* 外框陰影 */
+            box-shadow: 0 0 10px #070606;
+            padding: 20px;
+
+
+        }
+
+        /* 課程介紹內部中的圖片 */
+        .classbox img {
+            width: 100%;
+        }
+
+        /* 課程標題 Unity 5 (字分類為h3) */
+        .classbox h3 {
+            font-size: 2rem;
+        }
+
+        .classbox .p-blue {
+            color: #2c65b0;
+        }
+
+        .classbox p {
+            font-size: 18px;
+        }
+
+        .classbox p s {
+            font-size: 20px;
+        }
+
+        .classbox p span {
+            font-size: 22px;
+            color: #d00d0d;
+            /* 粗體字 */
+            font-weight: bold;
+        }
+
+        .classbox .p-center {
+            text-align: center;
+        }
+
+        /* 上課去得超連結 */
+        /* 按鈕外觀 */
+        .classbox .div-center a {
+            background-color: #d00d0d;
+            color: #fff;
+            text-decoration: none;
+            /* 因為超連結預設為行內元素:本身沒有寬高 */
+            /* 所以將超連結改成區塊元素 */
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /* 圓角 */
+            border-radius: 10px;
+        }
+
+        .classbox .div-center a:hover {
+            background-color: #760606;
+        }
+
+        /* 處裡按鈕的位置 */
+        .classbox .btn {
+            text-align: center；
+        }
+
+        /* 碰到按鈕時 */
+        /* .classbox .btn:hover{} */
+
+    
+/* 響應式中尺寸變化(640-1119) */
+@media(min-width:640px)and(max-width:1119px){
+    text{width: 80%;
+    }
+    .classcontent{width: 80%;
+    }
+    .classbox{
+        width: 80%;
+        margin-right: 10px;
+    }
+
+}
+
+
+
+        /* 響應式小尺寸變化 (639以下)*/
+        @media (max-width:639px) {
+            #wrap {
+                /* border: 1px solid  */
+                /* width: 400px; */
+                width: 100%;
+                margin: auto;
+            }
+
+            .banner img {
+                width: 100%;
+            }
+
+            /* 標題文字區堆疊排列 */
+            .text {
+                /* 維持fiex特性，只是改變方向 */
+                /* flex-direction: column； */
+                display: block;
+                width: 80%;
+            }
+
+            .textbox {
+                /* border:1px solid red */
+                width: 80%;
+                margin: auto;
+            }
+            .classcontent{
+                display: block;
+                width: 90%;
+            }
+            .classbox{
+                width: 90%;
+                margin-bottom: 20%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <img src="./images/banner.jpg" alt="banner圖">
+
+    </div>
+    <!-- 文字區 -->
+    <div class="text">
+        <!-- 標題區1 -->
+        <div class="textbox">
+            <h2>標題1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ipsum nobis dolorum veniam facilis
+                illo cumque, ducimus doloremque maxime dolorem maiores, obcaecati eveniet doloribus, veritatis
+                exercitationem? Modi, officiis. Obcaecati repudiandae laboriosam ut! Explicabo, quae nam!</p>
+        </div>
+        <!-- 標題區2 -->
+        <div class="textbox">
+            <h2>標題2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quibusdam voluptate, eveniet,
+                aspernatur odit blanditiis eligendi consectetur laborum provident veniam incidunt modi recusandae
+                maiores accusantium odio? Ratione velit dignissimos sequi voluptate, cupiditate quasi nobis nulla.
+            </p>
+        </div>
+        <!-- 標題區3 -->
+        <div class="textbox">
+            <h2>標題3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maxime, distinctio, ipsam suscipit
+                modi odio mollitia optio recusandae laboriosam repellendus amet. Impedit aliquam consequuntur beatae
+                tempore? Suscipit delectus id odit repellat adipisci vel odio corporis.</p>>
+        </div>
+    </div>
+    <div class="slogan">
+        <h2>讓學習成為一種習慣 </h2>
+    </div>
+
+    <div class="recommand ">
+        <h2>程推薦課</h2>
+    </div>
+    <!-- 課程介紹 -->
+    <div class="classcontent">
+
+        <div class="classbox">
+
+
+            <!-- 圖片 -->
+            <a href="./images/unity.jpg" date-lightbox="image-1" data-title="">
+                <img src="./images/unity.jpg" alt="unity">
+            </a>
+
+
+
+            <!-- 課程標題 -->
+            <h3>unity 5</h3>
+            <!-- 課程簡介 -->
+            <p class="p-blue">
+                既然，由於，巴爾扎克講過一句值得人反覆尋思的話，苦難是人生的老師。但願各位能從這段話中獲得心靈上的滋長。眼花似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。</p>
+            <!-- 講師 -->
+            <p>講師:XXX</p>
+            <p>影音課程時數:4小時</p>
+            <p class="p-center">
+            <p><s>原價:NT$1600</s>
+                <span>NT$1200</span>
+            </p>
+            <!-- 付款上課去 -->
+            <div class="div-center">
+                <a href="#">付款上課去</a>
+            </div>
+        </div>
+        <div class="classbox">
+
+<!-- 燈箱效果 -->
+            <!-- 圖片 -->
+            <a href="./images/gamesalad.jpg" date-lightbox="image-1" data-title="">
+                <img src="./images/gamesalad.jpg" alt="gamesalad">
+            </a>
+
+
+
+            <!-- 課程標題 -->
+            <h3>gamesalad</h3>
+            <!-- 課程簡介 -->
+            <p class="p-blue">
+                既然，由於，巴爾扎克講過一句值得人反覆尋思的話，苦難是人生的老師。但願各位能從這段話中獲得心靈上的滋長。眼花似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。</p>
+            <!-- 講師 -->
+            <p>講師:XXX</p>
+            <p>影音課程時數:4小時</p>
+            <p class="p-center">
+            <p><s>原價:NT$1600</s>
+                <span>NT$1200</span>
+            </p>
+            <!-- 付款上課去 -->
+            <div class="div-center">
+                <a href="#">付款上課去</a>
+            </div>
+        </div>
+        <div class="classbox">
+
+
+            <!-- 圖片 -->
+            <a href="./images/gwd.jpg" date-lightbox="image-1" data-title="">
+                <img src="./images/gwd.jpg" alt="gwd">
+            </a>
+
+
+
+
+            <!-- 課程標題 -->
+            <h3>Web designer </h3>
+            <!-- 課程簡介 -->
+            <p class="p-blue">
+                既然，由於，巴爾扎克講過一句值得人反覆尋思的話，苦難是人生的老師。但願各位能從這段話中獲得心靈上的滋長。眼花似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。</p>
+            <!-- 講師 -->
+            <p>講師:XXX</p>
+            <p>影音課程時數:4小時</p>
+            <p class="p-center">
+            <p><s>原價:NT$1600</s>
+                <span>NT$1200</span>
+            </p>
+            <!-- 付款上課去 -->
+            <div class="div-center">
+                <a href="#">付款上課去</a>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- 燈箱效果的js -->
+    <script src="./lightbox2/js/lightbox-plus-jquery.js"></script>
+    <script> src = "./lightbox2/js/lightbox.js"</script>
+
+</body>
+
+</html>
